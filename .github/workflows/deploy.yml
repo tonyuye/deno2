@@ -35,7 +35,7 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "tonyuye-deno-15"
-          entrypoint: "npm start"
+          entrypoint: "/index.js"
           root: "/"
           
           
