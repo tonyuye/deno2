@@ -32,13 +32,13 @@ jobs:
         run: "npm install"
 
       - name: Build step
-        run: "npm run build"
+        run: "npm start"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
           project: "tonyuye-deno-15"
           entrypoint: "index.js"
-          root: "build"
+          root: "/"
           
           
